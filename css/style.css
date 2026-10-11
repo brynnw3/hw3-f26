@@ -49,7 +49,7 @@ nav a:focus {
  five rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine selectors*/
-.accounts, .online-banking, .security, .loans, .contact {
+.accounts, .onlinebanking, .security, .loans, .contact {
      grid-column: 2 / span 3;
 }
 
@@ -57,7 +57,7 @@ nav a:focus {
      grid-row: 2;
 }
 
-.online-banking {
+.onlinebanking {
      grid-row: 3;
 }
 
@@ -77,6 +77,9 @@ nav a:focus {
      grid-column: 1 / -1;
      height: 675px;
      overflow: hidden;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
 }
 
 .accounts-image img, .onlinebanking-image img, .security-image img, .loans-image img, .contact-image img {
@@ -85,12 +88,6 @@ nav a:focus {
      width: 100%;
      height: auto;
      object-fit: cover;
-}
-
-.accounts-image, .onlinebanking-image, .security-image, .loans-image, .contact-image {
-     max-width: 100%;
-     width: 100%;
-     height: auto;
 }
 
 .accounts-image {
@@ -124,8 +121,8 @@ nav a:focus {
 }
 
 .text-block ul {
+     width: 100%;
      text-align: left;
-     display: inline-block;
 }
 
 /* Add your media query here */
